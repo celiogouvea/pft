@@ -29,6 +29,13 @@ const Carosel: React.FC = () => {
     setClickedIndex(index);
   };
 
+  const restartGif = (event: React.MouseEvent<HTMLImageElement>) => {
+    const gif = event.currentTarget;
+    const src = gif.src;
+    gif.src = '';
+    gif.src = src;
+  };
+
   return (
     <div className="carousel">
       <div className="carousel-inner">
@@ -36,6 +43,7 @@ const Carosel: React.FC = () => {
           <img
             key={index}
             src={image.src}
+            onMouseEnter={restartGif}
             alt={`Carousel image ${index + 1}`}
             className={`carousel-image ${index === currentIndex ? 'active' : ''} ${index === clickedIndex ? 'clicked' : ''}`}
             onClick={() => handleClick(index)}

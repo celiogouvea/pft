@@ -2,13 +2,20 @@ import gifImage from '/Programmer.gif';  // Ajuste o caminho conforme necessári
 import '../Home/Home.css';  // Certifique-se de criar e importar o arquivo CSS corretamente
 
 function Home() {
+
+  const restartGif = (event: React.MouseEvent<HTMLImageElement>) => {
+      const gif = event.currentTarget;
+      const src = gif.src;
+      gif.src = '';
+      gif.src = src;
+    };
   
 
   return (
     <div className="container">
       <div className="image-container">
         <a href="#">
-          <img src={gifImage} alt="Animated GIF" className="gif-imageHome" />
+          <img src={gifImage} alt="Animated GIF" className="gif-imageHome" onMouseEnter={restartGif} />
         </a>
       </div>
       <div className="text-container">
