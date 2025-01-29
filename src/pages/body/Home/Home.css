@@ -1,0 +1,76 @@
+/* Estilo global para o body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.image-container {
+  flex-shrink: 0; 
+  margin-right: 20px; 
+}
+
+.gif-imageHome {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+  margin: 50px;
+}
+
+.animated {
+  transform: scale(1.2);
+}
+
+.pHome{
+  margin: 0 50px 0 0;
+  text-align: justify;
+}
+
+/* Estilo para a div de texto */
+.text-container {
+  flex-grow: 1; 
+  max-width: 60%; 
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .image-container {
+      margin-right: 0;
+      margin-bottom: 20px; 
+      text-align: center; 
+  }
+
+  .gif-image {
+      max-width: 150px; 
+  }
+
+  .text-container {
+      max-width: 100%; 
+      padding-left: 10px; 
+      padding-right: 10px; 
+  }
+}

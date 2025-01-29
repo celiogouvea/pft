@@ -1,0 +1,50 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largura total da viewport */
+    background-color: #f8f8f8; /* Cor de fundo desejada */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garantir que o navbar fique acima de outros elementos */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garantir que o container use 100% da largura do navbar */
+    max-width: none; /* Remover qualquer largura máxima */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 90px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Permitir que o menu ocupe espaço no centro */
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    color: #333; /* Cor do texto desejada */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+  }
+  

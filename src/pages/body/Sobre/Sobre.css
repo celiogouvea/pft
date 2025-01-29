@@ -1,0 +1,69 @@
+/* Sobre.css */
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hint{
+    justify-content: center;
+    opacity: 1;
+    display: block;
+    width: 100%; 
+}
+
+
+.gif-image {
+    display: none;
+    transition: opacity 0.3s ease;
+    width: 60%; 
+    height: auto; 
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.pSobre {
+    margin-top: 20px;
+    text-align: justify;
+    transition: opacity 0.5s ease, text-shadow 0.3s ease;
+    padding: 10px;
+    cursor: pointer;  /* Adiciona um cursor de ponteiro para indicar interatividade */
+}
+
+.pSobre:hover {
+    text-shadow: 0 0 10px rgba(13, 45, 228, 0.945);  /* Efeito de brilho ao passar o mouse */
+}
+
+.container:hover .pSobre {
+    opacity: 0.3;
+}
+
+.container div:hover .pSobre {
+    opacity: 1;
+}
+
+.container div:hover .gif-image {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container div:hover .hint{
+    display: none;
+    opacity: 0.3;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}

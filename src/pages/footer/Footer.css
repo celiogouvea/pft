@@ -1,0 +1,18 @@
+/* Footer.css */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Garante que o footer ocupe toda a largura da página */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0;
+    display: flex; /* Adiciona flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f8f9fa; /* Adiciona um fundo se necessário */
+}
+  
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
