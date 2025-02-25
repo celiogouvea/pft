@@ -10,7 +10,7 @@ const projects = [
   },
   {
     name: "API - login NestJS",
-    link: "https://github.com/celiogouvea/pomodoro",
+    link: "https://github.com/celiogouvea/project-base-api",
     description: "Aplicação de desenvolvimetno de autenticação de usuário"
   },
 ];
