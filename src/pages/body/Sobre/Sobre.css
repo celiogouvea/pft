@@ -67,6 +67,11 @@ body, html {
     border-radius: 5px;
     line-height: 1.6;
   }
+
+  .clicked-text {
+    margin-top: 10px; /* Ajuste conforme necessário */
+    text-align: center;
+  }
   
 
   @media (max-width: 600px) {

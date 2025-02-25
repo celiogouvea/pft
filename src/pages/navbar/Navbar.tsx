@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Project from '../body/Projetos/Projects';
 import Home from '../body/Home/Home';
 import Sobre from '../body/Sobre/Sobre';
-import logo from '/public/cgouvea.png';
+import logo from '/cgouvea.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -19,7 +19,6 @@ const Navbar = () => {
           <div className="navbar-menu">
             <a onClick={() => setContent('Projetos')}>Projetos</a>
             <a onClick={() => setContent('Sobre')}>Sobre</a>
-            <a onClick={() => setContent('Contatos')}>Contatos</a>
           </div>
         </div>
       </nav>
@@ -27,7 +26,6 @@ const Navbar = () => {
         {content === 'Home' && <div><Home /></div>}
         {content === 'Projetos' && <div><Project /></div>}
         {content === 'Sobre' && <div><Sobre /></div>}
-        {content === 'Contatos' && <div>Conteúdo dos Contatos</div>}
       </div>
     </div>
   );
